@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>左伸缩右固定(边框吃掉bug)demo</title>
+        <style>
+            .wrapper {
+                overflow: hidden;
+            }
+            .main {
+                float: left;
+                width: 100%;
+                margin-right: -300px;
+                padding-right: 300px;
+                box-sizing: border-box;
+                border: solid 5px red;
+                height: 100px;
+            }
+            .side {
+                float: right;
+                width: 300px;
+                box-sizing: border-box;
+                border: solid 5px blue;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="main">
+                <!-- 可変 -->
+            </div>
+            <div class="side">
+                <!-- 固定 -->
+            </div>
+        </div>
+    </body>
+</html>
